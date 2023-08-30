@@ -1,0 +1,194 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.wrapper2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.verticalwrapper {
+    display: grid;
+}
+
+.header {
+    position: fixed;
+    background-color: 5BB8FB;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+}
+
+.headertext {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.box1 {
+    grid-column-start: 8;
+    grid-row: 1;
+    align-self: center;
+}
+
+.box2 {
+    grid-column-start: 10;
+    grid-row: 1;
+    align-self: center;
+}
+
+.box3 {
+    grid-column-start: 3;
+    vertical-align: top;
+    top: 0;
+    white-space: nowrap;
+}
+
+.box4 {
+    grid-column-start: 4;
+}
+
+.welcome {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    margin-left: 14%;
+    margin-right: 14%;
+}
+
+.welcomeimage {
+    width: 50%;
+    margin-top: 100px;
+}
+
+@media all and (max-width: 425px) {
+    .welcomeimage {
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 426px) and (max-width: 800px) {
+    .welcomeimage {
+        width: 65%;
+    }
+}
+
+@media all and (min-width: 801px) and (max-width: 1200px) {
+    .welcomeimage {
+        width: 58%;
+    }
+}
+
+@media all and (min-width: 1201px) {
+    .welcomeimage {
+        width: 50%;
+    }
+}
+
+.headerimage {
+    height: 100px;
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+	width: 100%;
+	height: 100px;
+    background-color: 5BB8FB;
+    color: black;
+}
+
+.footertext {
+    text-align: center;
+    vertical-align: top;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+}
+
+.form {
+    text-align: center;
+    vertical-align: middle;
+}
+
+input {
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+}
+
+input[type=text],[type=password] {
+    border: none;
+    border-bottom: 0.5px solid black;
+}
+
+input[type=text] {
+    background-color: white;
+    background-image: url('images/user.png');
+    background-size: 15%;
+    background-position: 0px 5px;
+    background-repeat: no-repeat;
+    padding-left: 55px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+input[type=password], [type=text][id=password] {
+    background-color: white;
+    background-image: url('images/password.png');
+    background-size: 10%;
+    background-position: 5px 10px;
+    background-repeat: no-repeat;
+    padding-left: 55px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+input[type=text],[type=password]:focus {
+    outline: none;
+}
+
+input[type=submit],[type=button] {
+    background-color: #5BB8FB;
+    border: none;
+    color: black;
+    text-decoration: none;
+    margin: 25px 25px;
+    cursor: pointer;
+    white-space: normal;
+    width: 220px;
+    height: 50px;
+}
+
+.passwordTable {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.tableHead td {
+    font-size: larger;
+    font-weight: bold;
+    height: 100px;
+}
+
+.alert {
+    color: CB0000;
+    font-size: large;
+}
