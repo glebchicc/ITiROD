@@ -153,6 +153,7 @@ function loadPasswordRecords() {
         snapshot.forEach(function(childSnapshot) {
             var childData = childSnapshot.val();
             var newRow = document.createElement('tr');
+            newRow.classList.add('tableElement');
 
             var website = document.createElement('td');
             var login = document.createElement('td');
@@ -160,8 +161,12 @@ function loadPasswordRecords() {
             var deleteData = document.createElement('td');
             var deleteButton = document.createElement('input');
 
+            website.classList.add('firstTableElement');
+            website.classList.add('table-row');
             website.textContent = childData.website;
+            login.classList.add('table-row');
             login.textContent = childData.login;
+            password.classList.add('table-row');
             password.textContent = childData.password;
             
             deleteButton.type = "button";

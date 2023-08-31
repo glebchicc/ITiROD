@@ -39,30 +39,19 @@ body {
     vertical-align: middle;
 }
 
-.box1 {
+.login-box {
     grid-column-start: 8;
     grid-row: 1;
     align-self: center;
 }
 
-.box2 {
+.signup-box {
     grid-column-start: 10;
     grid-row: 1;
     align-self: center;
 }
 
-.box3 {
-    grid-column-start: 3;
-    vertical-align: top;
-    top: 0;
-    white-space: nowrap;
-}
-
-.box4 {
-    grid-column-start: 4;
-}
-
-.welcome {
+.welcometext {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: x-large;
@@ -76,26 +65,94 @@ body {
 }
 
 @media all and (max-width: 425px) {
+    .headerimage {
+        display: none;
+    }
+    .login-box {
+        grid-column-start: 6;
+        grid-row: 1;
+    }
+    .signup-box {
+        grid-column-start: 6;
+        grid-row: 2;
+    }
     .welcomeimage {
+        width: 80%;
+        content: url(images/saveicon.png);
+    }
+    .passwordTable {
         width: 100%;
+    }
+    .passwordTable td {
+        display: block;
+        width: 100%;
+        border: none;
+        text-align: center;
+    }
+    .firstTableElement {
+        padding-top: 25px;
+    }
+    .tableHead {
+        display: none;
+    }
+    .createRecordSmall {
+        display: block;
+        text-align: center;
     }
 }
 
 @media all and (min-width: 426px) and (max-width: 800px) {
+    .headerimage {
+        display: none;
+    }
+    .login-box {
+        grid-column-start: 4;
+        grid-row: 1;
+    }
+    .signup-box {
+        grid-column-start: 8;
+        grid-row: 1;
+    }
     .welcomeimage {
         width: 65%;
+        content: url(images/saveicon.png);
+    }
+    .passwordTable {
+        width: 100%;
+    }
+    .passwordTable td {
+        display: block;
+        width: 100%;
+        border: none;
+        text-align: center;
+    }
+    .firstTableElement {
+        padding-top: 25px;
+    }
+    .tableHead {
+        display: none;
+    }
+    .createRecordSmall {
+        display: block;
+        text-align: center;
     }
 }
 
 @media all and (min-width: 801px) and (max-width: 1200px) {
     .welcomeimage {
-        width: 58%;
+        width: 75%;
+    }
+    .createRecordSmall {
+        display: none;
     }
 }
 
 @media all and (min-width: 1201px) {
     .welcomeimage {
         width: 50%;
+    }
+    .createRecordSmall {
+        display: none;
     }
 }
 
@@ -186,6 +243,7 @@ input[type=submit],[type=button] {
     font-size: larger;
     font-weight: bold;
     height: 100px;
+    
 }
 
 .alert {
